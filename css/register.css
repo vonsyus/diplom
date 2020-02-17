@@ -1,0 +1,81 @@
+/* fonts */
+@font-face {
+  font-family: 'Rounds';
+  src: url('../fonts/RoundsBlack.eot');
+  src: url('../fonts/RoundsBlack.eot?#iefix') format('embedded-opentype'), url('../fonts/RoundsBlack.woff2') format('woff2'), url('../fonts/RoundsBlack.woff') format('woff'), url('../fonts/RoundsBlack.ttf') format('truetype'), url('../fonts/RoundsBlack.svg#RoundsBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+/* colors */
+/* main */
+body {
+  background: url(../img/register/background.png) center no-repeat;
+  background-size: cover;
+  height: 935px;
+  font-family: 'Rounds', sans-serif;
+}
+input {
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+/* auth */
+.auth {
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 700px;
+  height: 550px;
+  margin-top: 105px;
+  background-color: #ffffff;
+  color: #a9dc00;
+}
+.auth .auth__title {
+  text-align: center;
+  font-size: 41px;
+  margin-bottom: 60px;
+}
+.auth .auth__input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 550px;
+  font-size: 25px;
+  margin-left: 35px;
+  margin-bottom: 40px;
+}
+.auth .auth__input-block--input {
+  width: 411px;
+  border: none;
+  background-color: #defbfb;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.auth .auth__interaction-block {
+  margin: 0 auto;
+  width: 495px;
+  text-align: center;
+  margin-top: 100px;
+}
+.auth .auth__interaction-block .auth__button {
+  padding: 15px 30px;
+  font-size: 25px;
+  border: none;
+  border-radius: 500px;
+  color: #008e75;
+  background-color: #00f900;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.auth .auth__interaction-block .auth__button:hover {
+  color: #005b4b;
+  background-color: #00e000;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}

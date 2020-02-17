@@ -1,0 +1,99 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Rounds';
+    src: url('../fonts/RoundsBlack.eot');
+    src: url('../fonts/RoundsBlack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RoundsBlack.woff2') format('woff2'),
+        url('../fonts/RoundsBlack.woff') format('woff'),
+        url('../fonts/RoundsBlack.ttf') format('truetype'),
+        url('../fonts/RoundsBlack.svg#RoundsBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.rnds() {
+	font-family: 'Rounds', sans-serif;
+}
+
+/* colors */
+@green-brown: #a9dc00;
+@blue: #00d4ec;
+@white: #ffffff;
+@text-box: #defbfb;
+@enter-bg: #00f900;
+@enter-text: #008e75;
+
+/* main */
+body {
+	background: url(../img/register/background.png) center no-repeat;
+	background-size: cover;
+	height: 935px;
+	.rnds();
+}
+
+input {
+	outline: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* auth */
+.auth {
+	margin: 0 auto;
+	padding-top: 30px;
+	width: 700px;
+	height: 550px;
+	margin-top: 105px;
+	background-color: @white;
+	color: @green-brown;
+
+	.auth__title {
+		text-align: center;
+		font-size: 41px;
+		margin-bottom: 60px;
+	}
+
+	.auth__input-block {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 550px;
+		font-size: 25px;
+		margin-left: 35px;
+		margin-bottom: 40px;
+	}
+
+	.auth__input-block--input {
+		width: 411px;
+		border: none;
+		background-color: @text-box;
+		font-size: 30px;
+		padding-left: 10px;
+	}
+
+	.auth__interaction-block {
+		margin: 0 auto;
+		width: 495px;
+		text-align: center;
+		margin-top: 100px;
+
+		.auth__button {		
+			padding: 15px 30px;
+			font-size: 25px;
+			border: none;
+			border-radius: 500px;
+			color: @enter-text;
+			background-color: @enter-bg;
+			transition: all .2s;
+
+			&:hover {
+				color: darken(@enter-text, 10%);
+				background-color: darken(@enter-bg, 5%);
+				transition: all .2s;
+			}
+		}
+	}	
+}

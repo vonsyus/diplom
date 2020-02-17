@@ -1,0 +1,164 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Rounds';
+    src: url('../fonts/RoundsBlack.eot');
+    src: url('../fonts/RoundsBlack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RoundsBlack.woff2') format('woff2'),
+        url('../fonts/RoundsBlack.woff') format('woff'),
+        url('../fonts/RoundsBlack.ttf') format('truetype'),
+        url('../fonts/RoundsBlack.svg#RoundsBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.rnds() {
+	font-family: 'Rounds', sans-serif;
+}
+
+/* colors */
+@green-brown: #a9dc00;
+@blue: #00d4ec;
+@white: #ffffff;
+@text-box: #defbfb;
+@enter-bg: #00f900;
+@enter-text: #008e75;
+@date-green: #00cd00;
+@exercise-text: #f152f1;
+@exercise-button: #ff309d;
+@dark-blue: #420074;
+
+/* main */
+body {
+    background: url(../img/thinking/background.png) top no-repeat;
+    background-size: cover;
+    height: 2000px;
+    .rnds();
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* nav */
+.nav {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+    .nav__links {
+        display: flex;
+
+        .nav__links__item {
+            font-size: 20px;
+            color: @green-brown;
+            margin-right: 40px;
+            transition: all .2s;
+
+            &:hover {
+                text-decoration: none;
+                color: darken(@green-brown, 10%);
+                transition: all .2s;
+            }
+        }
+    }
+
+    .nav__username {
+        font-size: 20px;
+        color: @enter-text;
+        text-align: right;
+        transition: all .2s;
+
+        &:hover {
+            text-decoration: none;
+            color: lighten(@enter-text, 5%);
+            transition: all .2s;
+        }
+    }
+}
+
+/* date__block */
+.date__block {
+    display: flex;
+    align-items: center;
+
+    .current-date {
+        .current-date__inner {
+            width: 70px;
+            height: 70px;
+            padding-top: 5px;
+            font-size: 16px;
+            color: @date-green;
+            text-align: center;
+            border-radius: 50%;
+            background-color: @white;
+        }
+    }
+
+    .date__block__text {
+        font-size: 32px;
+        color: @enter-text;
+        margin-left: 40px;
+    }
+}
+
+/* exercise */
+.exercise {
+    display: flex;
+    margin-top: 60px;
+
+    .exercise__image {
+        .exercise__image__bg {
+            width: 100%;
+            height: 310px;
+            border-radius: 24px;
+        }
+
+        .sorting {
+            background: url(../img/thinking/sorting.png) center;
+        }
+
+        .colors {
+            background: url(../img/thinking/colors.png) center;
+        }
+
+        .exercise__name {
+            font-size: 27px;
+            color: @exercise-text;
+            text-align: center;
+            margin-top: 10px;
+            line-height: 30px;
+        }
+    }
+
+    .exercise__description {
+        .description__title {
+            font-size: 33px;
+            color: @dark-blue;
+        }
+
+        .description__item {
+            font-size: 27px;
+            color: @exercise-text;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+
+        .exercise__button {
+            display: block;
+            float: right;
+            background-color: @exercise-button;
+            color: @white;
+            padding: 10px 40px;
+            border-radius: 500px;
+            font-size: 27px;
+            transition: all .2s;
+
+            &:hover {
+                background-color: darken(@exercise-button, 10%);
+                transition: all .2s;
+            }
+        }
+    }
+}
